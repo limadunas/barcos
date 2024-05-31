@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'barcos';
+    src: url('../Barcos/fontes/MorrisRomanBlack.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'barcos1';
+    src: url('../Barcos/fontes/Roman\ SD.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #654312;
+    --cor1: #A37B42;
+    --cor2: #52402765;
+    --cor3: rgba(240, 201, 146, 0.959);
+
+    --font-barcos: 'barcos';
+    --font-barcos1: 'barcos1';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+header {
+    background-color: var(--cor1);
+    font-family: var(--font-barcos);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 150px;
+}
+
+header > h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+nav {
+    font-family: var(--font-barcos);
+    background-color: var(--cor2);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+nav > a {
+    color: var(--cor3);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor0);
+}
+
+main {
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h2 {
+    font-family: var(--font-barcos);
+    font-size: 2em;
+    font-weight: normal;
+    text-indent: 8px;
+}
+
+main p {
+    font-family: var(--font-barcos1);
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+main img {
+    width: 100%;
+}
+
+div.video {
+    background-color: var(--cor1);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
